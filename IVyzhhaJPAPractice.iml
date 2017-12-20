@@ -4,7 +4,7 @@
     <facet type="hibernate" name="Hibernate">
       <configuration>
         <datasource-map>
-          <unit-entry name="hibernate.cfg.xml" />
+          <unit-entry name="hibernate.cfg.xml" value="3d1a6775-d9b0-4884-8fe1-14eb6bcf8f81" />
         </datasource-map>
         <naming-strategy-map />
         <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/hibernate.cfg.xml" />
@@ -22,7 +22,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Projects/IVyzhhaJPAPractice/db-derby-10.14.1.0-bin/lib/derby.jar!/" />
+          <root url="jar://$MODULE_DIR$/../db-derby-10.14.1.0-bin/lib/derby.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -31,7 +31,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Projects/IVyzhhaJPAPractice/db-derby-10.14.1.0-bin/lib/derbyclient.jar!/" />
+          <root url="jar://$MODULE_DIR$/../db-derby-10.14.1.0-bin/lib/derbyclient.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -40,7 +40,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Projects/IVyzhhaJPAPractice/db-derby-10.14.1.0-bin/lib/derbynet.jar!/" />
+          <root url="jar://$MODULE_DIR$/../db-derby-10.14.1.0-bin/lib/derbynet.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -49,7 +49,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Projects/IVyzhhaJPAPractice/db-derby-10.14.1.0-bin/lib/derbytools.jar!/" />
+          <root url="jar://$MODULE_DIR$/../db-derby-10.14.1.0-bin/lib/derbytools.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

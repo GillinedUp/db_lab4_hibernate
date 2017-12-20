@@ -5,22 +5,32 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int dbID;
+    private String productName;
+    private int unitsOnStock;
 
-    private String ProductName;
-    private int UnitsOnStock;
+    @ManyToOne
+    private Supplier supplier;
 
     public Product() {}
 
     public Product(String productName, int unitsOnStock) {
-        this.ProductName = productName;
-        this.UnitsOnStock = unitsOnStock;
+        this.productName = productName;
+        this.unitsOnStock = unitsOnStock;
+    }
+
+    public int getDbID() {
+        return dbID;
     }
 
     public String getProductName() {
-        return ProductName;
+        return productName;
     }
 
     public int getUnitsOnStock() {
-        return UnitsOnStock;
+        return unitsOnStock;
+    }
+
+    public void setSupplier(Supplier supplier) {
+        this.supplier = supplier;
     }
 }

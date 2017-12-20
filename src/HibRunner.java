@@ -13,11 +13,20 @@ public class HibRunner {
 //        Scanner scan = new Scanner(System.in);
 //        System.out.println("Type product name and its quantity: ");
 //        Product appleProduct = new Product(scan.nextLine(), scan.nextInt());
+        Supplier supplier = new Supplier("AppleSupplies Co.", "Czarnowejska", "Krakow");
+
         sessionFactory = getSessionFactory();
         Session session = sessionFactory.openSession();
         Transaction tx = session.beginTransaction();
-        Product appleProduct = session.get(Product.class,1);
-        System.out.println(appleProduct.getProductName() + " " + appleProduct.getUnitsOnStock());
+
+//        System.out.println(appleProduct.getDbID());
+
+        Product foundProduct = session.get(Product.class,1);
+        if (foundProduct != null) {
+            foundProduct.setSupplier(supplier);
+        }
+        session.save(supplier);
+        session.save(foundProduct);
         tx.commit();
         session.close();
     }
